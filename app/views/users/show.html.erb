@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Party type:</strong>
+  <%= @user.party_type %>
+</p>
+
+<p>
+  <strong>Case number:</strong>
+  <%= @user.case_number %>
+</p>
+
+<p>
+  <strong>Signup date:</strong>
+  <%= @user.signup_date %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
